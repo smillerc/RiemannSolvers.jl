@@ -1,13 +1,18 @@
 name = "RiemannSolvers"
 uuid = "7e06e883-cf4c-4cf8-826e-7bf8b2ea1cb3"
 authors = ["Miller", "Samuel <smil@lle.rochester.edu> and contributors"]
-version = "1.0.0-DEV"
+version = "0.1.0-DEV"
+
+[deps]
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 
 [compat]
-julia = "1"
+julia = "1.6"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+TestItemRunner = "f8b46487-2199-4994-9208-9a1283c18c0a"
+TestItems = "1c621080-faea-4a02-84b6-bbd5e436b8fe"
 
 [targets]
-test = ["Test"]
+test = ["Test", "TestItems", "TestItemRunner"]
