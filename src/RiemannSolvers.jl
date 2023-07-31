@@ -1,5 +1,9 @@
 module RiemannSolvers
 
-# Write your package code here.
+using StaticArrays
+
+abstract type AbstractRiemannSolver end
+
+include("hllc.jl")
 
 end
